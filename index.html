@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="iso-8859-1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+<title>CUBO - Teste</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="content-language" content="pt-br">
+<meta http-equiv="pragma" content="Public" />
+<meta http-equiv="cache-control" content="Public" />
+<meta name="rating" content="General" />
+<meta http-equiv="expires" content = "Fri, 17 Mar 2017 01:39:43 GMT" />
+<meta name="distribution" content="Global" />
+<meta name="revisit-after" content="30 Days" />
+<meta name="robots" content="index,follow" />
+<meta name="author" content="Chiquito ! Design">
+
+
+<!--##### FONTS ######-->
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+<!--##### CSS BASE ######-->
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/grid.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+	
+</head>
+
+<body>
+
+<header class="bg_top">
+
+<div class="container_12">
+
+		
+           <div class="grid_2 logo">
+               <img src="imagens/logo.jpg" width="78" height="91" alt="logo-landing"/>
+           </div>
+           
+            <nav class="grid_8 menu_bar">
+                  <ul>
+                      <li><a href="#">Lorem Isum</a></li>
+                      <li class="divider-vertical"></li>
+                      <li><a href="#">Dolor	</a></li>
+                      <li class="divider-vertical"></li>
+                      <li><a href="#">Consectetur</a></li>
+                    </ul>
+             </nav>
+             
+             <div class="grid_2 txtRight">
+             	<a class="btn btn_Menu" href="#">Interdum <span class="fa fa-chevron-right"></span></a>          		
+             </div>
+             
+			<div class="grid_8">
+             <ul class="breadcrumb">
+                      <li><a href="#">Vestibulum</a></li>
+                      <li><a href="#">Ultrices</a></li>
+                      <li><a href="#">Érat egestas</a></li>
+                      <li class="active">Varius felis sed</li>
+                    </ul>     
+            </div>
+</div><!--GRID-->
+
+</header>
+
+<section>
+<div class="container_12">
+    <div class="grid_9">
+    
+       <div class="slide-content slide-display-container" style="max-width:800px">
+              <img class="mySlides" src="imagens/slide1.jpg" style="width:100%">
+              <img class="mySlides" src="imagens/slide2.jpg" style="width:100%">
+              <img class="mySlides" src="imagens/slide3.jpg" style="width:100%">
+              <div class="txt-center slide-section slide-display-bottommiddle" style="width:100%">
+                <span class="slide-badge demo slide-border slide-transparent slide-hover-white" onclick="currentDiv(1)"></span>
+                <span class="slide-badge demo slide-border slide-transparent slide-hover-white" onclick="currentDiv(2)"></span>
+                <span class="slide-badge demo slide-border slide-transparent slide-hover-white" onclick="currentDiv(3)"></span>
+              </div>
+        </div> 
+        
+        
+            <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" slide-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " slide-white";
+}
+</script>
+
+    </div>
+        <div class="grid_3"><img src="imagens/banner_arvores.png" width="219" height="244" alt="banner_arvores"/></div>
+</div> 
+</section>
+
+<div class="clear"></div>
+
+<section> 
+<div class="container_12">
+    <aside>
+        <div class="grid_3 sidenav">
+               <ul>
+               <h4>Áestigulum</h4>
+           		 <hr>
+                 <li><span class="fa fa-caret-right"></span> Vestibulum</li>
+                  <li><a href="#">Vestibulum ultrices</a></li>
+                  <li><a href="#">Erat ergestas</a></li>
+                  <li><a href="#">Varigus felis sed</a></li>
+                </ul>
+                
+                <ul>
+                 <li><span class="fa fa-caret-right"></span> Áestibuçum</li>
+                </ul>
+                
+                 <ul>
+                 <li><span class="fa fa-caret-right"></span> Vestibulum</li>
+                  <li><a href="#">Vestibulum ultrices</a></li>
+                  <li><a href="#">Erat ergestas</a></li>
+                  <li><a href="#">Varigus felis sed</a></li>
+                </ul>
+                
+                <ul>
+                 <li><span class="fa fa-caret-right"></span> Áestibuçum</li>
+                  <li><a href="#">Vestibulum ultrices</a></li>
+                  <li><a href="#">Erat ergestas</a></li>
+                </ul>
+                
+                 <ul>
+                 <li><span class="fa fa-caret-right"></span> Vestibulum</li>
+                  <li><a href="#">Vestibulum ultrices</a></li>
+                  <li><a href="#">Erat ergestas</a></li>
+                </ul>
+            
+        </div>
+    </aside>
+    
+     <article>
+    <div class="grid_9 anulaEspaco">
+   		 <div class="container_12">
+            <div class="grid_6">
+            	<h1>Étiam enin massa</h1>
+            	<hr>
+            	<p>Maecenas ut ante posuere, ultrices diam ut, tempus mauris. Nam tincidunt nisl dui, id porta dui ornare vel. Phasellus ac lectus eu metus accumsan elementum fringilla sed felis. Praesent a eros neque.</p>
+            	<p>Nam dui lacus, blandit sit amet aliquam at, lobortis ut mauris. Pellentesque scelerisque velit eu varius ultrices. Curabitur viverra, erat sit amet auctor suscipit, massa lectus dictum erat, imperdiet lobortis mauris diam nec lacus. Proin lacinia eros eget congue lacinia.</p>
+            </div>
+            <div class="grid_3">
+            	<h2>Suspendisse et</h2>
+            	<hr>
+    			<p><img src="imagens/banner_gato.png" width="220" height="150" alt="banner_gato"/></p>
+            </div>
+            <div class="grid_9">
+            
+                <div class="contCaption">
+                    <img src="imagens/banner_pao.jpg" width="700" height="200" alt="banner_pao"/>
+                        <div class="caption"><br>Etiam sagittis nisi risus, vitae finibus ligula aliquam sit amet.</div>
+                </div>
+            
+            </div>
+            
+            <div class="clear"></div>
+            
+            <div class="grid_3">
+            	<div class="box">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-check fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <p>Ùonec laoreet sem id vehicula vehicula.</p>
+                 </div>
+            </div>
+            <div class="grid_3">
+            	<div class="box">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-times fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <p>Mauris non congue justo,<br> ut convallis purus.<br> Vestibulum ligula.</p>
+                 </div>
+            </div>
+            <div class="grid_3">
+            	<div class="box">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <p>Morbi augue tellus,<br> viverra vestibulum felis et,<br> eleifend consectetur...</p>
+                 </div>
+            </div>
+         </div>
+    </div>
+     </article>    
+</div>
+</section> 
+
+<footer>
+<div class="rodape">
+	<div class="container_12">
+    	<div class="grid_8">
+          <div class="container_12">
+        	<h3>Áuctor commod</h3>
+                <div class="grid_2 menu_rodape anulaEspaco">
+                <h4>Consectetur</h4>
+                <ul>
+                    <li><a href="#">ÁLorem Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Lorem 3</a></li>
+                    <li><a href="#">Domus item 4</a></li>
+                    <li><a href="#">Domuçs 5</a></li>
+                </ul>
+                <a class="btn btn_menu_rodape" href="#">All things <span class="fa fa-chevron-right"></span></a>
+                </div>
+                
+                <div class="grid_2 menu_rodape anulaEspaco">
+                <h4>&nbsp;</h4>
+                 <ul>
+                    <li><a href="#">Lorem 7</a></li>
+                    <li><a href="#">Item 8</a></li>
+                    <li><a href="#">Lorem 9</a></li>
+                </ul>
+                </div>
+                
+                <div class="grid_2 menu_rodape anulaEspaco">
+                <h4>Vestibulum</h4>
+                 <ul>
+                    <li><a href="#">ÁLorem Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Lorem 3</a></li>
+                    <li><a href="#">Domus item 4</a></li>
+                    <li>&nbsp;</li>
+                   
+                </ul>
+                <a class="btn btn_menu_rodape" href="#">All things <span class="fa fa-chevron-right"></span></a>
+                </div>
+                
+           </div>
+        </div>
+        <div class="grid_4">
+             <h3>Pellentesque</h3>
+             <div class="grid_2 anulaEspaco">
+             	<p><img src="imagens/logo_r1_c1.jpg" width="129" height="73" alt=""/></p>
+                <p><img src="imagens/logo_r3_c1.jpg" width="129" height="73" alt=""/></p>
+                <p><img src="imagens/logo_r5_c1.jpg" width="129" height="73" alt=""/></p>
+             </div>
+             
+             <div class="grid_2 anulaEspaco">
+             	<p><img src="imagens/logo_r1_c3.jpg" width="129" height="73" alt=""/></p>
+                <p><img src="imagens/logo_r3_c3.jpg" width="129" height="73" alt=""/></p>
+                <p><img src="imagens/logo_r5_c3.jpg" width="129" height="73" alt=""/></p>
+             </div>
+        </div>
+      <div class="clear"></div>
+        <hr>
+
+          <nav class=" grid_4 menu_institucional1 anulaEspaco ">
+                  <ul>
+                      <li><a href="#">Lorem Isum</a></li>
+                      <li class="divider-vertical"></li>
+                      <li><a href="#">Dolor	</a></li>
+                    </ul>
+             </nav>
+             
+             <nav class=" grid_4 menu_institucional2 anulaEspaco floatRight">
+                  <ul>
+                      <li><a href="#">Lorem Isum</a></li>
+                      <li class="divider-vertical"></li>
+                      <li><a href="#">Dolor	</a></li>
+                      <li class="divider-vertical"></li>
+                      <li><a href="#">Dolor	</a></li>
+                    </ul>
+             </nav>
+    </div>
+</div>
+
+<div class="copyright">
+	<div class="container_12">
+    <p>9999©Ut urna ligula, pretium ut elit dapibus, ornare tempus leo. Suspendisse augue massa<br> Donec in maximus metus. suspendisse volutpat ornare congue.</p>
+    </div>
+</div>
+</footer>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#slide img:eq(0)").addClass("ativo").show();
+			var texto = $(".ativo").attr("alt");
+			$("#slide").prepend("<p>"+texto+"</p>");
+			
+			setInterval(slide,3000);
+		})
+	</script>
+</body>
+</html>
